@@ -4,11 +4,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Mal">
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:text="Hitung Zakat Mal"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Jenis Zakat"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textutama"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Penhasilan Utama"
+                />
+            <EditText
+                android:id="@+id/utama"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:inputType="number"/>
+            <TextView
+                android:id="@+id/textlain"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Penghasilan Lain"/>
+            <EditText
+                android:id="@+id/lain"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:inputType="number"/>
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/hitung_mal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Hitung"/>
+    </LinearLayout>
 
 </FrameLayout>
