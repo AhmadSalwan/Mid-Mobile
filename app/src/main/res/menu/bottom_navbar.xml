@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Fitrah"
+        android:icon="@drawable/baseline_workspaces_24"
+        android:id="@+id/fitrah"
+        />
+    <item android:title="Mal"
+        android:icon="@drawable/baseline_work_24"
+        android:id="@+id/Mal"/>
+</menu>
